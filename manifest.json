@@ -1,43 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-sdk/3.0.0/manifest.schema.json",
     "_schemaVersion": "3.0.0",
-    "app": "",
+    "app": "tech.flecs.pacman",
     "version": "##VERSION##",
     "revision": "0",
-    "image": "flecs.azurecr.io/",
+    "image": "flecs.azurecr.io/tech.flecs.pacman",
     "multiInstance": false,
     "editors": [
         {
-            "name": "My UI",
-            "port": 6789,
-            "supportsReverseProxy": true
+            "name": "Play Now!",
+            "port": 80,
+            "supportsReverseProxy": false
         }
-    ],
-    "args": [
-        "--launch-arg-1",
-        "--launch-arg-2=8000"
-    ],
-    "capabilities": [],
-    "conffiles": [
-        "default.conf:/etc/my-app/default.conf",
-        "default.conf:/etc/my-app/default.conf:ro",
-        "default.conf:/etc/my-app/default.conf:rw"
-    ],
-    "devices": [
-        "/dev/net/tun"
-    ],
-    "env": [
-        "MY_ENV=value"
-    ],
-    "ports": [
-        "12345:12345"
-    ],
-    "volumes": [
-        "my-app-etc:/etc/my-app",
-        "/var/lib/my-app:/var/lib/my-app"
-    ],
-    "labels": [
-        "org.my.label",
-        "org.my.label-with-value=Some custom label value"
     ]
 }
