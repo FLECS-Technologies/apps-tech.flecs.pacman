@@ -8,7 +8,7 @@
     "multiInstance": false,
     "editors": [
         {
-            "name": "Play Now!",
+            "name": "Pacman Now!",
             "port": 80,
             "supportsReverseProxy": false
         }
